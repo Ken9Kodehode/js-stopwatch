@@ -1,0 +1,97 @@
+body {
+    background: #000000;
+    color: #00e5ff;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border: 3px soldi white;
+    border-radius: 50px;
+    background: #04ff00;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#stopwatch {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+#buttons {
+    position: absolute;
+    top: 55%;
+    left: 48.4%;
+    transform: translate(-51.6%, -45%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}
+
+#start-but {
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
+#stop-but {
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+#reset-but {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+#start-but:hover {
+    background-color: #04ff00;
+}
+#stop-but:hover {
+    background-color: #ff2c2c;
+}
+#reset-but:hover {
+    background-color: #4c30ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  body {
+    background-image: linear-gradient(to bottom, #030420, #000000 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+
+  hr {
+    width: 50px;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, 0.7);
+    border-right-width: 50px;
+    position: absolute;
+    bottom: 100%;
+    transform-origin: 100% 50%;
+    animation-name: rain;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rain {
+    from {
+      transform: rotate(105deg) translateX(0);
+    } 
+    to {
+      transform: rotate(105deg) translateX(calc(100vh + 20px));
+    }
+  }
+
